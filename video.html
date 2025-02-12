@@ -1,0 +1,24 @@
+<!-- 두 번째 페이지: 굴착공사 신고 (동영상) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>굴착공사 신고</title>
+    <style>
+        body { text-align: center; margin: 0; padding: 0; background-color: black; }
+        video { width: 100%; height: auto; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <video controls autoplay id="video">
+        <source src="굴착공사 신고.mp4" type="video/mp4">
+        브라우저가 동영상을 지원하지 않습니다.
+    </video>
+    <script>
+        document.getElementById('video').addEventListener('ended', function() {
+            window.location.href = 'gas.html';
+        });
+    </script>
+</body>
+</html>
